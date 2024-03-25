@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<div class="sc-download sc-pad-top-90 sc-pad-bottom-90 sc-text-white sc-zada-bg">
+    <div class="container">
+      <div class="sc-download-form" id="form">
+
+        <form id="enviar_email" role="form" method="POST" class="sc-form">
+          <!-- enctype="text/plain -->
+
+          <div id="sc-link-calendario">
+            <div id="msgEnvio" class="msg">
+              <h3 id="lbTitulo">Sua mensagem foi enviada!</h3>
+              <p id="lbDesc" class="sc-text-spaced sc-mar-bottom-30 sc-text-light-yellow">entraremos em contato</p>
+            </div>
+          </div>
+
+          <div id="sc-email-enviado">
+            
+            <h3 class="sc-text-center sc-text-height">Dados</h3>
+            
+            
+            <!-- TESTE DIV -->
+            <div class="input-group campo">
+                <input class="input sc-mar-top-15 sc-text-regular campo" required type="text" id="nomeUsuario">
+                <label class="label" for="nomeUsuario">Nome</label>
+            </div>
+            <!-- TESTE DIV -->
+            <div class="campo sc-mar-top-15">
+              <p class="sc-text-regular">Email</p>
+              <input id="campoEmail" name="c_email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required autocomplete="off" />
+            </div>
+
+            <div id="pnTelefones">
+              <div class="campo sc-mar-top-15">
+                <p class="sc-text-regular">Telefone</p>
+                <input id="campoTelefone" name="c_telefone" type="tel" required autocomplete="off" vMask-Telefone />
+              </div>
+            </div>
+
+            <div class="campo sc-mar-top-15">
+              <p class="sc-text-regular">Qual seu segmento de negócio?</p>
+              <input id="campoMensagem" name="c_msg" type="text" required autocomplete="off" />
+            </div>
+
+            <div class="campo sc-mar-top-15">
+              <p class="sc-text-regular">Por onde nos conheceu?</p>
+              <input id="campoMeet" name="c_meet" type="text" required autocomplete="off" />
+            </div>
+
+
+            <div class="campo sc-mar-top-15">
+              <p id="lbSoma" class="sc-text-regular">9 + 1?</p>
+              <input id="campoSoma" name="c_soma" type="tel" pattern="10$" required autocomplete="off" vMask-Soma />
+            </div>
+
+            <button
+              class="sc-btn sc-btn-large sc-mar-auto sc-btn-yellow-gradient sc-yellow-shadow sc-text-height semSelecao sc-mar-top-30 sc-mar-15"
+              id="btEnviarEmail" type="submit">ENVIAR</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
